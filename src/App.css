@@ -1,0 +1,168 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color:hsl(235, 19%, 35%);
+  background: hsl(0, 0%, 98%);
+  background-image: url('./assets/bg-desktop-light.jpg');
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  /* background: #fff; */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.todo1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+h1 {
+  text-align: center;
+  color: hsl(0, 0%, 98%);
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type='text'] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  
+}
+
+input[type="checkbox"i]{
+  border-radius: 50%;
+}
+
+.button {
+  padding: 10px;
+  border: none;
+ 
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 98%);
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 2px;
+}
+.footer{
+  display: flex;
+  gap: 1px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  color: hsl(236, 33%, 92%);
+}
+.footer span{
+  font-size: 12px;
+  color: hsl(236, 9%, 61%);
+  
+}
+.filters{
+  display: flex;
+}
+.filters button{
+  border: none;
+  cursor: pointer;
+  background-color:hsl(0, 0%, 98%) ;
+  color:hsl(235, 19%, 35%);
+}
+.filters button.active{
+  
+  color: rgb(46, 111, 233);
+}
+.dark {
+  background: #333;
+  color: #fff;
+}
+
+.dark .container {
+  background: #444;
+}
+
+.dark input[type='text'] {
+  background: #555;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+.dark button {
+  background: #777;
+  color: #fff;
+}
+.dark-mode-toggle{
+  /* background-color: #fff; */
+  /* color: #fff4f4; */
+  border: none;
+}
+
+.dark button:hover {
+  background: #555;
+}
+
+.dark .todo-item {
+  border-bottom: 1px solid #666;
+}
+
+.dark .filters button {
+  background: #555;
+}
+
+.dark .filters button:hover {
+  background: #444;
+}
+
+.dark .filters button.active {
+  border-bottom: 2px solid #00bfff;
+}
+.delete{
+  background-color: #fff;
+}
+.edit{
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+.clearCompleted{
+  background-color: #fff;
+  color: #333;
+}
+.sort-options{
+  justify-content: center;
+  align-items: center;
+}
